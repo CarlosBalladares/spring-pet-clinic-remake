@@ -1,21 +1,25 @@
 package com.carlosballadares.springpetclinicremake.model;
 
-import com.sun.xml.internal.rngom.parse.host.Base;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 import java.time.LocalDate;
+@Entity
+public class Pet extends BaseEntity {
 
-public class Pet extends Base {
 
-    private PetType petType;
+    private String petType;
+    @OneToOne
     private Owner owner;
+
     private LocalDate birthDate;
 
 
-    public PetType getPetType() {
+    public String getPetType() {
         return petType;
     }
 
-    public void setPetType(PetType petType) {
+    public void setPetType(String petType) {
         this.petType = petType;
     }
 
