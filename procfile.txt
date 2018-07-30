@@ -1,0 +1,1 @@
+web: ./mvnw install && ./mvnw spring-boot:run -pl spring-pet-clinic-remake
