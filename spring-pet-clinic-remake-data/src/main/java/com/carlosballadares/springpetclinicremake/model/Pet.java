@@ -1,8 +1,10 @@
 package com.carlosballadares.springpetclinicremake.model;
 
+import com.sun.xml.internal.rngom.parse.host.Base;
+
 import java.time.LocalDate;
 
-public class Pet {
+public class Pet extends Base {
 
     private PetType petType;
     private Owner owner;
